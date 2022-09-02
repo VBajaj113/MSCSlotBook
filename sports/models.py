@@ -1,4 +1,5 @@
 from django.db import models
+from users.models import User
 
 
 class Sport(models.Model):
@@ -53,3 +54,20 @@ class Slot(models.Model):       #currently manual, but can be automated too
 
     def __str__(self):
         return self.sport.name + " " + str(self.date)
+
+
+class BookRequest(models.Model):
+    slot = models.OneToOneField(Slot, on_delete=models.CASCADE)
+    reason = models.TextField(null=True, default="", blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    is_accepted = models.BooleanField(default=False)
+    is_pending = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = 'Booking Request'
+        verbose_name_plural = 'Booking Requests'
+
+    def __str__(self):
+        return self.slot.sport.name + " " + str(self.slot.date)
