@@ -6,6 +6,14 @@ from django.contrib import messages
 from PIL import Image
 
 
+@login_required
 def SportPage(request, sport):
     game = Sport.objects.get(code=sport)
     return render(request, 'sports/sport_page.html', {'game':game})
+
+
+@login_required
+def book(request, sport):
+    game = Sport.objects.get(code=sport)
+    return render(request, 'sports/booking_page.html', {'game':game})
+    

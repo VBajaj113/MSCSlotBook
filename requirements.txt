@@ -5,8 +5,6 @@ sure to state any special features you want to highlight.
 
 1.1 Specifications
 1.1.1 Minimum Requirements:
-4. Staff should be able to add new slots, inventory, courts for a particular sport
-or add another sport page.
 6. The system should facilitate quick searching of any sport that a member may
 want to book a slot for. You may create a search bar, or think of a way to
 categorise content.
@@ -63,4 +61,3 @@ To do:
 profile
 home
 password change email
-sport page
