@@ -1,0 +1,66 @@
+Also draft and submit a design document, stating what is the basic database
+model or schema of your application and how are you providing access control. Just
+bullet points clearly stating what and how your system works is fine. Also, make
+sure to state any special features you want to highlight.
+
+1.1 Specifications
+1.1.1 Minimum Requirements:
+4. Staff should be able to add new slots, inventory, courts for a particular sport
+or add another sport page.
+6. The system should facilitate quick searching of any sport that a member may
+want to book a slot for. You may create a search bar, or think of a way to
+categorise content.
+7. Only registered members should be allowed to book a slot. The slot booking
+system should have the following features-
+(a) A user can request to book an available slot for a sport at the sports
+complex. The user shouldn’t be allowed to book more than 3 slots per day.
+(b) Acceptance of the requests should be made automatic.
+(c) There should be a page for staff members where they can view all bookings
+and cancel a booking if needed.
+(d) An interface for staff members to update the availability in case of a
+holiday or due to maintenance.
+8. Registered members should have a profile page where they can view their
+basic info, recent activity, the slots they have booked etc.
+
+1.1.2
+Preferred requirements
+1. You can add a rating and review system, where members could add reviews
+for the arena/court they played the particular sport in and rate them on some
+scale.
+2. You can add a featured matches section, where details about upcoming Sportech/
+Inter IIT matches can be seen. Featured matches will be added by the re-
+spective staff.
+3. In the front page, you can add a section for trending or popular sports. The
+trending section could be based on a suitable metric, for example, the number
+of times the courts for sport has been booked by the members over the year.
+4. Slots for frequently played sports may not be available at all times. It may
+get booked soon after getting available again. You can implement a wait-list
+or queue system for booking a slot, so that people have a better chance at
+getting one.
+5. You can add more features to searching and browsing like fuzzy search, sorting
+and filtering by fields, etc.
+
+1.1.3
+Bonus
+This may lead us to believe your exceptional candidature.
+1. You may add an option to link the user account with Google, Facebook, etc.
+2. Try to verify the email ID during registration. You may also try and prevent
+the same user from registering using multiple email IDs.
+3. You may implement email notifications, to notify the user whether his request
+for booking a slot has been accepted or cancelled.
+4. You are welcome to implement a better request acceptance system than on a
+first come first serve basis. For example acceptance of requests can be decided
+3 hours prior to the slot, depending on the past history of the users who have
+sent requests. People who don’t book often can be given a higher preference.
+5. You can implement scorecards for ongoing matches in which live updates can
+be done, (Note-It doesn’t have to be an actual sport specific scorecard)
+6. To prevent the users from posting rude/offensive comments, there should
+be a provision for administrators to monitor and regulate all user activity.
+The admin should be able to take down any offensive comment, and send an
+appropriate warning to the concerned user.
+
+To do:
+profile
+home
+password change email
+sport page

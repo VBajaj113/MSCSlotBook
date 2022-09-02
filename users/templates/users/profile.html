@@ -1,0 +1,53 @@
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <div class="media">
+            <div class="profile-card text-center shadow bg-light p-4 my-5 rounded-3">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="profile-photo shadow">
+                            <br>
+                            <img src="{{ user.avatar.url }}" class="image-fluid image-thumbnail rounded-circle account-img">
+                            <div class="media-body">
+                                <h2 class="account-heading">{{ user.username }}</h2>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="profile-photo shadow p-3" align='left'>
+                            <div class="media-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h3 class="account-heading">Name:</h3>
+                                        <h4>{{ user.first_name }} {{ user.last_name }}</h4>
+                                        <br>
+                                        <h3 class="account-heading">E-mail:</h3>
+                                        <h4>{{ user.email }}</h4>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h3 class="account-heading">To Fill</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Update Info</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
