@@ -1,19 +1,19 @@
 {% extends "users/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <h1>{{ sport }}</h1>
+    <h1>{{ game.name }}</h1>
     <img src="{{ game.image.url }}" alt="game image" width="300">
     <h2>Details:</h2>
     <br>
-    <h3>Courts Available:</h3>
-    {% for court in game.court.all %}
+    <h3>Courts:</h3>
+    {% for court in game.court_set.all %}
         <h4>{{ court.name }}</h4>
-        <h4>Courts Available:</h4>
-        <h5>{{ court.number }}</h5>
-    
+        <p>Available: {{ court.number }}</p>
     {% endfor %}
+
     <h3>Inventory</h3>
-    {% for tool in game.inventory.all %}
+    {% for tool in game.inventory_set.all %}
         <p>{{ tool.name }} : {{ tool.amount }}</p>
     {% endfor %}
+
 {% endblock content %}

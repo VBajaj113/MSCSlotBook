@@ -7,5 +7,5 @@ from PIL import Image
 
 
 def SportPage(request, sport):
-    game = Sport.objects.get(name=sport)
-    return render(request, 'sports/sport_page.html', {'sport':sport, 'game':game})
+    game = Sport.objects.get(code=sport)
+    return render(request, 'sports/sport_page.html', {'game':game})

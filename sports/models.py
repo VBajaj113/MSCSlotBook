@@ -52,4 +52,4 @@ class Slot(models.Model):       #currently manual, but can be automated too
         verbose_name_plural = 'Slots'
 
     def __str__(self):
-        return self.sport.name + " " + self.date
+        return self.sport.name + " " + str(self.date)
