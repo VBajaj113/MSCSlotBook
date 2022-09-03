@@ -53,7 +53,7 @@ class Slot(models.Model):       #currently manual, but can be automated too
         verbose_name_plural = 'Slots'
 
     def __str__(self):
-        return self.sport.name + " " + str(self.date)
+        return f'{str(self.date)} {self.sport.name} - {str(self.start_time)} to {str(self.end_time)}'
 
 
 class BookRequest(models.Model):
@@ -70,4 +70,4 @@ class BookRequest(models.Model):
         verbose_name_plural = 'Booking Requests'
 
     def __str__(self):
-        return self.slot.sport.name + " " + str(self.slot.date)
+        return str(self.slot)

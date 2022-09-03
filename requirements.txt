@@ -4,15 +4,6 @@ bullet points clearly stating what and how your system works is fine. Also, make
 sure to state any special features you want to highlight.
 
 1.1.1 Minimum Requirements:
-6. The system should facilitate quick searching of any sport that a member may
-want to book a slot for. You may create a search bar, or think of a way to
-categorise content.
-(a) A user can request to book an available slot for a sport at the sports
-complex. The user shouldn’t be allowed to book more than 3 slots per day.
-(c) There should be a page for staff members where they can view all bookings
-and cancel a booking if needed.
-(d) An interface for staff members to update the availability in case of a
-holiday or due to maintenance.
 8. Registered members should have a profile page where they can view their
 basic info, recent activity, the slots they have booked etc.
 

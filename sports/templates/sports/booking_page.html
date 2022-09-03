@@ -2,6 +2,12 @@
 {% load crispy_forms_tags %}
 {% block content %}
     <div class="content-section">
+        <h2>Slots Available</h2>
+        {% for slot in slot_lis %}
+            {% if slot.is_booked == False %}
+                <p>{{ slot.start_time }} to {{ slot.end_time }}</p>
+            {% endif %}
+        {% endfor %}
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
