@@ -15,12 +15,14 @@ def SportPage(request, sport):
 @login_required
 def book(request, sport):
     if request.method == 'POST':
-        form = BookingForm(request.POST, instance=request.user)
+        form = BookingForm(request.POST)
         
         if form.is_valid():
             slot_request = form.save(commit=False)
             slot = form.cleaned_data.get('slot')
             slot_request.user = request.user
+            slot_request.slot = slot
+            slot_request.reason = form.cleaned_data.get('reason')
             slot.is_booked = True
             slot_request.save()
 
