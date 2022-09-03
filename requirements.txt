@@ -39,6 +39,4 @@ be a provision for administrators to monitor and regulate all user activity.
 The admin should be able to take down any offensive comment, and send an
 appropriate warning to the concerned user.
 
-profile
-home
 password change email
