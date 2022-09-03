@@ -3,10 +3,6 @@ model or schema of your application and how are you providing access control. Ju
 bullet points clearly stating what and how your system works is fine. Also, make
 sure to state any special features you want to highlight.
 
-1.1.1 Minimum Requirements:
-8. Registered members should have a profile page where they can view their
-basic info, recent activity, the slots they have booked etc.
-
 1.1.2
 Preferred requirements
 1. You can add a rating and review system, where members could add reviews

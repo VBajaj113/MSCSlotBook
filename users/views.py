@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.decorators import login_required
 from .forms import *
-from sports.models import Sport
+from sports.models import BookRequest, Sport
 from django.contrib import messages
 from PIL import Image
 
@@ -62,9 +62,12 @@ def profile(request):
     else:
         form = UserProfileForm(instance=request.user)
 
+    req_lis=[i for i in BookRequest.objects.all() if i.user == request.user]
+
     context = {
         'form':form,
         'title':'Profile',
+        'req_lis':req_lis,
     }
     return render(request, 'users/profile.html', context)
 
