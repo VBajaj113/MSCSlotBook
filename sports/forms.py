@@ -7,3 +7,9 @@ class BookingForm(ModelForm):
     class Meta:
         model = BookRequest
         fields = ['slot', 'reason']
+
+class SlotDate(ModelForm):
+    date = forms.DateField()
+    class Meta:
+        model = BookRequest
+        fields = ['date']

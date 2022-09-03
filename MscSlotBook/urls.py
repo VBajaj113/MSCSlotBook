@@ -33,7 +33,8 @@ urlpatterns = [
     path('', user_views.homepage, name='home'),
     path('about/', user_views.about, name='about'),
     path('sport/<slug:sport>/', sport_views.SportPage, name='sport_page'),
-    path('sport/<slug:sport>/book/', sport_views.book, name='book')
+    path('sport/<slug:sport>/book/', sport_views.slot_date, name='slot_date'),
+    path('sport/<slug:sport>/book/<slug:date>/', sport_views.book, name='book'),
 ]
 
 if settings.DEBUG:

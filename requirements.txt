@@ -3,16 +3,12 @@ model or schema of your application and how are you providing access control. Ju
 bullet points clearly stating what and how your system works is fine. Also, make
 sure to state any special features you want to highlight.
 
-1.1 Specifications
 1.1.1 Minimum Requirements:
 6. The system should facilitate quick searching of any sport that a member may
 want to book a slot for. You may create a search bar, or think of a way to
 categorise content.
-7. Only registered members should be allowed to book a slot. The slot booking
-system should have the following features-
 (a) A user can request to book an available slot for a sport at the sports
 complex. The user shouldn’t be allowed to book more than 3 slots per day.
-(b) Acceptance of the requests should be made automatic.
 (c) There should be a page for staff members where they can view all bookings
 and cancel a booking if needed.
 (d) An interface for staff members to update the availability in case of a
@@ -26,8 +22,7 @@ Preferred requirements
 for the arena/court they played the particular sport in and rate them on some
 scale.
 2. You can add a featured matches section, where details about upcoming Sportech/
-Inter IIT matches can be seen. Featured matches will be added by the re-
-spective staff.
+Inter IIT matches can be seen. Featured matches will be added by the respective staff.
 3. In the front page, you can add a section for trending or popular sports. The
 trending section could be based on a suitable metric, for example, the number
 of times the courts for sport has been booked by the members over the year.
@@ -57,7 +52,6 @@ be a provision for administrators to monitor and regulate all user activity.
 The admin should be able to take down any offensive comment, and send an
 appropriate warning to the concerned user.
 
-To do:
 profile
 home
 password change email
